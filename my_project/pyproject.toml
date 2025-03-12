@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pubmed-fetcher"
+version = "0.1.0"
+description = "Fetch research papers from PubMed based on a query"
+authors = ["Your Name <your_email@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+biopython = "^1.80"
+pandas = "^1.3.3"
+requests = "^2.26.0"
+
+[tool.poetry.scripts]
+get-papers-list = "get_papers_list:main"
